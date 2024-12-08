@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.EnvironmentalImpactDashboardController_6">
+    <PieChart fx:id="carbonFootprintChart" layoutX="50" layoutY="50">
+        <!-- Define PieChart for carbon footprint -->
+    </PieChart>
+
+    <PieChart fx:id="waterUsageChart" layoutX="300" layoutY="50">
+        <!-- Define PieChart for water usage -->
+    </PieChart>
+
+    <TableView fx:id="environmentalImpactMetricsTable" layoutX="50" layoutY="250">
+        <!-- Define columns for environmental impact metrics -->
+    </TableView>
+
+    <Button fx:id="generateEnvironmentalReportButton" layoutX="50" layoutY="350" text="Generate Environmental Report"/>
+</AnchorPane>

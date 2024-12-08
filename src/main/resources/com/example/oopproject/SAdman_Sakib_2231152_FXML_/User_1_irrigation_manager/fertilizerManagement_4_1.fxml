@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.FertilizerManagementController_4_1">
+    <TableView fx:id="fertilizerApplicationTable" layoutX="50" layoutY="50">
+        <!-- Define columns for fertilizer application schedule -->
+    </TableView>
+
+    <TextField fx:id="fertilizerTypeTextField" layoutX="50" layoutY="250" promptText="Fertilizer Type"/>
+    <TextField fx:id="amountTextField" layoutX="200" layoutY="250" promptText="Amount"/>
+    <TextField fx:id="applicationRateTextField" layoutX="350" layoutY="250" promptText="Application Rate"/>
+
+    <Button fx:id="createPlanButton" layoutX="50" layoutY="300" text="Create New Plan"/>
+    <Button fx:id="viewHistoricalDataButton" layoutX="200" layoutY="300" text="View Historical Data"/>
+</AnchorPane>
+

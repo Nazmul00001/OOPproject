@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.XYChart?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.SoilHealthDashboardController_2_1">
+    <BarChart fx:id="soilMoistureChart" layoutX="50" layoutY="50">
+        <xAxis>
+            <NumberAxis label="Time"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Soil Moisture"/>
+        </yAxis>
+    </BarChart>
+
+    <BarChart fx:id="phChart" layoutX="300" layoutY="50">
+        <xAxis>
+            <NumberAxis label="Time"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="pH Level"/>
+        </yAxis>
+    </BarChart>
+
+    <BarChart fx:id="nutrientLevelsChart" layoutX="50" layoutY="250">
+        <xAxis>
+            <NumberAxis label="Time"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Nutrient Levels"/>
+        </yAxis>
+    </BarChart>
+
+    <TableView fx:id="soilTestResultsTable" layoutX="50" layoutY="450">
+        <!-- Define columns for soil test results -->
+    </TableView>
+
+    <Button fx:id="viewReportsButton" layoutX="50" layoutY="550" text="View Detailed Reports"/>
+</AnchorPane>

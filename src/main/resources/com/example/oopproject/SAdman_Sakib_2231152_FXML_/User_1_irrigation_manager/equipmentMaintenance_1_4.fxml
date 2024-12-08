@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.EquipmentMaintenanceController_1_4">
+    <TableView fx:id="maintenanceScheduleTable" layoutX="50" layoutY="50">
+        <!-- Define table columns here -->
+    </TableView>
+
+    <TextField fx:id="partsUsedTextField" layoutX="50" layoutY="250" promptText="Parts Used" />
+    <TextField fx:id="laborHoursTextField" layoutX="200" layoutY="250" promptText="Labor Hours" />
+
+    <Button fx:id="markAsCompletedButton" layoutX="50" layoutY="300" text="Mark as Completed" onAction="#handleMarkAsCompleted"/>
+    <Button fx:id="generateReportButton" layoutX="200" layoutY="300" text="Generate Report" onAction="#handleGenerateReport"/>
+</AnchorPane>

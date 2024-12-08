@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.CropHealthAssessmentController_3_2">
+    <TextField fx:id="visualObservationsTextField" layoutX="50" layoutY="50" promptText="Visual Observations"/>
+
+    <ComboBox fx:id="cropStageComboBox" layoutX="50" layoutY="100"/>
+    <ComboBox fx:id="healthStatusComboBox" layoutX="200" layoutY="100"/>
+
+    <Button fx:id="submitAssessmentButton" layoutX="50" layoutY="150" text="Submit Assessment"/>
+</AnchorPane>
