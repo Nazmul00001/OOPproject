@@ -1,3 +1,7 @@
+import javafx.event.ActionEvent;
+import javafx.scene.chart.LineChart;
+import javafx.scene.control.TableView;
+
 public class EnvironmentalImpactDashboardController_6
 {
     @javafx.fxml.FXML
