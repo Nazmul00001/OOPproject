@@ -1,3 +1,8 @@
+import javafx.scene.chart.LineChart;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableView;
+
 public class PestControlDataAnalysisController_3
 {
     @javafx.fxml.FXML

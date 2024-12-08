@@ -6,7 +6,7 @@
 <?import javafx.scene.control.DatePicker?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.IrrigationSchedulingController_1_2">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.IrrigationSchedulingController_1_2">
     <DatePicker fx:id="startTimePicker" layoutX="50" layoutY="50"/>
     <DatePicker fx:id="endTimePicker" layoutX="200" layoutY="50"/>
 

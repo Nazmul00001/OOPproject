@@ -4,7 +4,7 @@
 <?import javafx.scene.control.TextField?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.SoilSamplingController_2_2">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.SoilSamplingController_2_2">
     <TableView fx:id="samplingScheduleTable" layoutX="50" layoutY="50">
         <!-- Define table columns for the sampling schedule -->
     </TableView>

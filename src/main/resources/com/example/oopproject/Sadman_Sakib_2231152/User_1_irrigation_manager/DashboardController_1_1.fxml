@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="546.0" prefWidth="571.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.DashboardController_1_1">
+<AnchorPane prefHeight="546.0" prefWidth="571.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.DashboardController_1_1">
     <TextField fx:id="soilMoistureTextField" layoutX="28.0" layoutY="33.0" promptText="Soil Moisture" />
     <TextField fx:id="temperatureTextField" layoutX="163.0" layoutY="33.0" promptText="Temperature" />
     <TextField fx:id="humidityTextField" layoutX="28.0" layoutY="83.0" promptText="Humidity" />

@@ -1,3 +1,7 @@
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+
 public class PestControlPlanningController_2_1
 {
     @javafx.fxml.FXML

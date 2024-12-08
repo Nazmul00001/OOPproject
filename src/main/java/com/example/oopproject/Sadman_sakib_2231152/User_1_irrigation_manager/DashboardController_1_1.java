@@ -16,14 +16,21 @@ public class DashboardController_1_1
     @javafx.fxml.FXML
     private TextField temperatureTextField;
     @javafx.fxml.FXML
-    private Button detailedReportsButton;
-    @javafx.fxml.FXML
     private LineChart waterUsageChart;
-    @javafx.fxml.FXML
-    private Button manualIrrigationButton;
-    @javafx.fxml.FXML
-    private Button automatedIrrigationButton;
 
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+
+    @javafx.fxml.FXML
+    public void detailedReportsButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void automatedIrrigationButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void manualIrrigationButton(ActionEvent actionEvent) {
+    }
+}

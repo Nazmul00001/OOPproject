@@ -4,7 +4,7 @@
 <?import javafx.scene.control.TextField?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.ResourceAllocationController_5_2">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.ResourceAllocationController_5_2">
     <TableView fx:id="resourceInventoryTable" layoutX="50" layoutY="50">
         <!-- Define columns for resource inventory -->
     </TableView>

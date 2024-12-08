@@ -1,11 +1,15 @@
-public class FinancialDashboardController_7
+import javafx.scene.chart.LineChart;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
+
+public class FinancialDashboardController_8
 {
     @javafx.fxml.FXML
     private Button generateFinancialReportButton;
     @javafx.fxml.FXML
-    private BarChart expensesChart;
+    private LineChart expensesChart;
     @javafx.fxml.FXML
-    private BarChart revenueChart;
+    private LineChart revenueChart;
     @javafx.fxml.FXML
     private TableView financialReportsTable;
 

@@ -1,8 +1,4 @@
-import javafx.event.ActionEvent;
-import javafx.scene.chart.LineChart;
-import javafx.scene.control.TableView;
-
-public class EnvironmentalImpactDashboardController_6
+public class EnvironmentalImpactDashboardController_6_2
 {
     @javafx.fxml.FXML
     private LineChart biodiversityImpactChart;

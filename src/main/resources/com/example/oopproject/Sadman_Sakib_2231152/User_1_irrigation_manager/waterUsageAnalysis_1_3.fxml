@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.WaterUsageAnalysisController_1_3">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.WaterUsageAnalysisController_1_3">
     <PieChart fx:id="waterUsageByCropChart" layoutX="50" layoutY="50"/>
     <PieChart fx:id="waterUsageByZoneChart" layoutX="300" layoutY="50"/>
     <PieChart fx:id="waterUsageByTimePeriodChart" layoutX="50" layoutY="300"/>

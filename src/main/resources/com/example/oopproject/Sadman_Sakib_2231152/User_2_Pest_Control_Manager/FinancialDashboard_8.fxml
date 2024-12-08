@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TableView?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.User_1_irrigation_manager.User_2_Pest_Control_Manager.FinancialDashboardController_8">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.FinancialDashboardController_8">
     <!-- Revenue and Expense Charts -->
     <LineChart fx:id="revenueChart" layoutX="50" layoutY="50">
         <xAxis>

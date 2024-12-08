@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Button?>
 
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152_FXML.FinancialDashboardController_7">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.FinancialDashboardController_7">
     <BarChart fx:id="revenueChart" layoutX="50" layoutY="50">
         <xAxis>
             <NumberAxis label="Time"/>

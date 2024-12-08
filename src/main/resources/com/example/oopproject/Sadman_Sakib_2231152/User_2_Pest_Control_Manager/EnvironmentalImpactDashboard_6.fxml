@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.SAdman_Sakib_2231152_FXML_.User_1_irrigation_manager.User_2_Pest_Control_Manager.EnvironmentalImpactDashboardController_6">
+<AnchorPane xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.EnvironmentalImpactDashboardController_6_2">
     <!-- Charts for Pesticide Usage and Biodiversity Impact -->
     <LineChart fx:id="pesticideUsageChart" layoutX="50" layoutY="50" prefHeight="310.0" prefWidth="465.0">
         <xAxis>
