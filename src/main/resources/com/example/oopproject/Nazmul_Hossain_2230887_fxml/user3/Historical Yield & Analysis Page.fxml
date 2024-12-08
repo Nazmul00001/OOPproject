@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <TableView fx:id="historicalDataTable">
+        <columns>
+            <TableColumn text="Year" />
+            <TableColumn text="Yield (tons)" />
+        </columns>
+    </TableView>
+    <HBox spacing="5">
+        <Label text="Land Details:" />
+        <TextField fx:id="landDetailsField" />
+        <Label text="Equipment:" />
+        <TextField fx:id="equipmentField" />
+    </HBox>
+    <Button fx:id="submitPlanButton" text="Submit Plan" />
+    <LineChart fx:id="historicalGraph">
+        <xAxis>
+            <CategoryAxis />
+        </xAxis>
+        <yAxis>
+            <NumberAxis />
+        </yAxis>
+    </LineChart>
+</VBox>

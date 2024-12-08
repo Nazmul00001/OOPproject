@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <HBox spacing="5">
+        <Label text="Task Category:" />
+        <ComboBox fx:id="taskCategorySelector" />
+    </HBox>
+    <TextArea fx:id="taskDetailsField" promptText="Details about tasks completed" />
+    <TableView fx:id="taskSummaryTable">
+        <columns>
+            <TableColumn text="Task" />
+            <TableColumn text="Status" />
+        </columns>
+    </TableView>
+    <HBox spacing="10">
+        <Button fx:id="submitReportButton" text="Submit Report" />
+        <Button fx:id="viewSummaryButton" text="View Summary" />
+    </HBox>
+</VBox>

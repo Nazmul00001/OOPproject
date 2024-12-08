@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <HBox spacing="10">
+        <Label text="Financial Category:" />
+        <ComboBox fx:id="financialCategorySelector" />
+    </HBox>
+    <TableView fx:id="financialDataTable">
+        <columns>
+            <TableColumn text="Category" />
+            <TableColumn text="Details" />
+            <TableColumn text="Amount" />
+        </columns>
+    </TableView>
+    <Button fx:id="downloadReportButton" text="Download Report" />
+</VBox>

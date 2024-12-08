@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <HBox spacing="5">
+        <Label text="Buyer Order:" />
+        <ComboBox fx:id="buyerOrderSelector" />
+    </HBox>
+    <TableView fx:id="orderTable">
+        <columns>
+            <TableColumn text="Order" />
+            <TableColumn text="Delivery Date" />
+        </columns>
+    </TableView>
+    <HBox spacing="10">
+        <Button fx:id="generatePackingPlanButton" text="Generate Packing Plan" />
+        <Button fx:id="confirmOrderButton" text="Confirm Order Completion" />
+    </HBox>
+</VBox>

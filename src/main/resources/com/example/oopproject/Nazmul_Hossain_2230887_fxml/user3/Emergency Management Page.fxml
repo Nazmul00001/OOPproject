@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <TextField fx:id="emergencyDetailsField" promptText="Log Emergency Details" />
+    <TextField fx:id="actionPlanField" promptText="Action Plan" />
+    <Button fx:id="submitActionPlanButton" text="Submit Action Plan" />
+    <TableView fx:id="resolutionTable">
+        <columns>
+            <TableColumn text="Action" />
+            <TableColumn text="Status" />
+        </columns>
+    </TableView>
+</VBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <HBox spacing="5">
+        <Label text="Type of Mango/Plot/Zone:" />
+        <ComboBox fx:id="mangoTypeSelector" />
+    </HBox>
+    <HBox spacing="5">
+        <Label text="Total Quantity:" />
+        <TextField fx:id="quantityField" />
+    </HBox>
+    <HBox spacing="5">
+        <Label text="Issues (if any):" />
+        <TextField fx:id="issuesField" />
+    </HBox>
+    <TableView fx:id="harvestDataTable">
+        <columns>
+            <TableColumn text="Plot" />
+            <TableColumn text="Harvested Quantity" />
+        </columns>
+    </TableView>
+    <Button fx:id="submitHarvestButton" text="Submit Harvest Data" />
+</VBox>

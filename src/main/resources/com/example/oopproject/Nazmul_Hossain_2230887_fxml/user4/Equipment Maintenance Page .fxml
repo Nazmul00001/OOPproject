@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <TextField fx:id="equipmentUsageField" promptText="Log equipment usage" />
+    <HBox spacing="5">
+        <Label text="Maintenance Type:" />
+        <ComboBox fx:id="maintenanceTypeSelector" />
+    </HBox>
+    <TableView fx:id="repairHistoryTable">
+        <columns>
+            <TableColumn text="Date" />
+            <TableColumn text="Details" />
+        </columns>
+    </TableView>
+    <Button fx:id="submitMaintenanceButton" text="Submit Maintenance Record" />
+</VBox>

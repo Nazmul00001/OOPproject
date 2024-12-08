@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="508.0" prefWidth="279.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23">
+    <HBox spacing="5">
+        <Label text="Stock Details:" />
+        <TextField fx:id="stockDetailsField" />
+    </HBox>
+    <HBox spacing="5">
+        <Label text="Auto-Reorder Threshold:" />
+        <ComboBox fx:id="thresholdSelector" />
+    </HBox>
+    <TableView fx:id="inventoryTable">
+        <columns>
+            <TableColumn text="Item" />
+            <TableColumn text="Stock Level" />
+        </columns>
+    </TableView>
+    <Button fx:id="submitChangesButton" text="Submit Changes" />
+</VBox>

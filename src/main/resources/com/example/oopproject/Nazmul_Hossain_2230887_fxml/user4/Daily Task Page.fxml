@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
+    <TextField fx:id="taskDetailsField" promptText="Assigned Task Details" />
+    <HBox spacing="10">
+        <Button fx:id="markTaskCompleteButton" text="Mark Task as Complete" />
+        <Button fx:id="viewTaskDetailsButton" text="View Task Details" />
+    </HBox>
+</VBox>
