@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.MapView?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.SAdman_Sakib_2231152_FXML_.User_1_irrigation_manager.User_2_Pest_Control_Manager.PestMonitoringDashboardController_1_1">
+    <!-- Pest Infestation Map -->
+    <MapView fx:id="pestInfestationMap" layoutX="50" layoutY="50" width="500" height="300" />
+
+    <!-- Pest Population Trends Chart -->
+    <LineChart fx:id="pestPopulationChart" layoutX="50" layoutY="400">
+        <xAxis>
+            <NumberAxis label="Time"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Pest Population"/>
+        </yAxis>
+    </LineChart>
+
+    <!-- Pest Identification and Treatment Recommendations Table -->
+    <TableView fx:id="pestTreatmentTable" layoutX="600" layoutY="50">
+        <!-- Define columns for pest data -->
+    </TableView>
+
+    <!-- Buttons -->
+    <Button fx:id="manualPestControlButton" layoutX="600" layoutY="350" text="Manual Pest Control"/>
+    <Button fx:id="automatedPestControlButton" layoutX="700" layoutY="350" text="Automated Treatments"/>
+    <Button fx:id="detailedReportsButton" layoutX="800" layoutY="350" text="Detailed Reports"/>
+</AnchorPane>

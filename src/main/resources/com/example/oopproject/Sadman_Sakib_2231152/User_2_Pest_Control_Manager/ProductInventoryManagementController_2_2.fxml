@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.SAdman_Sakib_2231152_FXML_.User_1_irrigation_manager.User_2_Pest_Control_Manager.ProductInventoryManagementController_2_2">
+    <!-- Product Inventory Table -->
+    <TableView fx:id="productInventoryTable" layoutX="50" layoutY="50">
+        <!-- Define columns for inventory -->
+    </TableView>
+
+    <!-- Text Fields for Quantity, Price, and Supplier -->
+    <TextField fx:id="quantityTextField" layoutX="600" layoutY="50" promptText="Quantity"/>
+    <TextField fx:id="priceTextField" layoutX="600" layoutY="100" promptText="Price"/>
+    <TextField fx:id="supplierTextField" layoutX="600" layoutY="150" promptText="Supplier"/>
+
+    <!-- Buttons for Add, Edit, Delete -->
+    <Button fx:id="addProductButton" layoutX="600" layoutY="200" text="Add Product"/>
+    <Button fx:id="editProductButton" layoutX="700" layoutY="200" text="Edit Product"/>
+    <Button fx:id="deleteProductButton" layoutX="800" layoutY="200" text="Delete Product"/>
+</AnchorPane>
+

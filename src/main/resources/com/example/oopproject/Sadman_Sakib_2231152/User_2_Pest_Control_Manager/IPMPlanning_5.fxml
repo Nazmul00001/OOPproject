@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.SAdman_Sakib_2231152_FXML_.User_1_irrigation_manager.User_2_Pest_Control_Manager.IPMPlanningController_5">
+    <!-- IPM Plan Table -->
+    <TableView fx:id="ipmPlanTable" layoutX="50" layoutY="50" prefWidth="700" />
+
+    <!-- TextFields for Pest Monitoring Strategies and Control Measures -->
+    <TextField fx:id="monitoringStrategiesTextField" layoutX="800" layoutY="50" promptText="Monitoring Strategies" />
+    <TextField fx:id="controlMeasuresTextField" layoutX="800" layoutY="100" promptText="Control Measures" />
+
+    <!-- Button to Create IPM Plan -->
+    <Button fx:id="createIPMPlanButton" layoutX="800" layoutY="150" text="Create Plan" />
+</AnchorPane>

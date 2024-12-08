@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.SAdman_Sakib_2231152_FXML_.User_1_irrigation_manager.User_2_Pest_Control_Manager.EquipmentMaintenanceController_2_3">
+    <!-- Maintenance Schedule Table -->
+    <TableView fx:id="maintenanceScheduleTable" layoutX="50" layoutY="50">
+        <!-- Define columns for maintenance schedule -->
+    </TableView>
+
+    <!-- Text Fields for Parts Used and Labor Hours -->
+    <TextField fx:id="partsUsedTextField" layoutX="600" layoutY="50" promptText="Parts Used"/>
+    <TextField fx:id="laborHoursTextField" layoutX="600" layoutY="100" promptText="Labor Hours"/>
+
+    <!-- Buttons for Mark as Completed and Generate Report -->
+    <Button fx:id="markAsCompletedButton" layoutX="600" layoutY="150" text="Mark as Completed"/>
+    <Button fx:id="generateReportButton" layoutX="700" layoutY="150" text="Generate Report"/>
+</AnchorPane>
