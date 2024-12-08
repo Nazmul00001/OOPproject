@@ -2,17 +2,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
-    <HBox spacing="10">
-        <Label text="Financial Category:" />
-        <ComboBox fx:id="financialCategorySelector" />
-    </HBox>
-    <TableView fx:id="financialDataTable">
-        <columns>
-            <TableColumn text="Category" />
-            <TableColumn text="Details" />
-            <TableColumn text="Amount" />
-        </columns>
-    </TableView>
-    <Button fx:id="downloadReportButton" text="Download Report" />
-</VBox>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user3.FinancialOverviewPageController">
+    <children>
+        <ComboBox fx:id="financialCategory" layoutX="50" layoutY="50" promptText="Select Category"/>
+        <TableView fx:id="financialTable" layoutX="50" layoutY="100" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Item"/>
+                <TableColumn text="Amount"/>
+            </columns>
+        </TableView>
+        <Button fx:id="downloadButton" layoutX="200" layoutY="420" text="Download Report" onAction="#downloadReport"/>
+    </children>
+</AnchorPane>

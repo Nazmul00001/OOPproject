@@ -2,24 +2,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml">
-    <VBox spacing="15" alignment="CENTER">
-        <Label text="Workforce Management" style="-fx-font-size: 16px;" />
-        <HBox spacing="10">
-            <Label text="Select Worker:" />
-            <ComboBox fx:id="workerComboBox" />
-        </HBox>
-        <TableView fx:id="taskTable">
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user3.ManageWorkforceEffectivelyController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="fieldWorkerSelection" promptText="Select Field Worker"/>
+        <TableView fx:id="taskAssignmentsTable" prefHeight="300" prefWidth="400">
             <columns>
-                <TableColumn text="Task" />
-                <TableColumn text="Assigned By" />
-                <TableColumn text="Status" />
+                <TableColumn text="Task"/>
+                <TableColumn text="Status"/>
+                <TableColumn text="Deadline"/>
             </columns>
         </TableView>
-        <TextArea fx:id="taskNotesArea" promptText="Notes for the worker" />
-        <HBox spacing="10">
-            <Button text="Assign Task" fx:id="assignTaskButton" />
-            <Button text="Submit" fx:id="submitTaskButton" />
+        <TextArea fx:id="taskNotes" promptText="Add Notes or Instructions"/>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="assignTaskButton" text="Assign Task" onAction="#assignTask"/>
+            <Button fx:id="submitButton" text="Submit" onAction="#submitWorkforceChanges"/>
         </HBox>
-    </VBox>
-</AnchorPane>
+    </children>
+</VBox>
