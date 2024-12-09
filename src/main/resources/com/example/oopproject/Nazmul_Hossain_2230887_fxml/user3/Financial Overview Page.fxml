@@ -2,15 +2,35 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user3.FinancialOverviewPageController">
-    <children>
-        <ComboBox fx:id="financialCategory" layoutX="50" layoutY="50" promptText="Select Category"/>
-        <TableView fx:id="financialTable" layoutX="50" layoutY="100" prefHeight="300" prefWidth="400">
-            <columns>
-                <TableColumn text="Item"/>
-                <TableColumn text="Amount"/>
-            </columns>
-        </TableView>
-        <Button fx:id="downloadButton" layoutX="200" layoutY="420" text="Download Report" onAction="#downloadReport"/>
-    </children>
-</AnchorPane>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user3.FinancialOverviewPageController">
+    <top>
+        <Label text="Financial Overview" style="-fx-font-size: 20; -fx-font-weight: bold;" BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+            <!-- Dropdown for Selecting Financial Category -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Select Category:" />
+                <ComboBox fx:id="financialCategory" promptText="Choose Category" prefWidth="200" />
+            </HBox>
+
+            <!-- TableView for Displaying Financial Data -->
+            <Label text="Financial Details:" />
+            <TableView fx:id="financialDataTable" prefHeight="300">
+                <columns>
+                    <TableColumn text="Date" />
+                    <TableColumn text="Description" />
+                    <TableColumn text="Amount" />
+                    <TableColumn text="Type" />
+                </columns>
+            </TableView>
+
+            <!-- Buttons -->
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Download Report" onAction="#downloadReport" />
+                <Button text="View Details" onAction="#viewDetails" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

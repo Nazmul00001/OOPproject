@@ -2,10 +2,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
-    <TextField fx:id="taskDetailsField" promptText="Assigned Task Details" />
-    <HBox spacing="10">
-        <Button fx:id="markTaskCompleteButton" text="Mark Task as Complete" />
-        <Button fx:id="viewTaskDetailsButton" text="View Task Details" />
-    </HBox>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user4.DailyTaskPageController" spacing="10" alignment="CENTER">
+    <children>
+        <TextField fx:id="taskDetails" promptText="Assigned Task Details" editable="false"/>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="markTaskCompleteButton" text="Mark Task as Complete" onAction="#markTaskComplete"/>
+            <Button fx:id="viewTaskDetailsButton" text="View Task Details" onAction="#viewTaskDetails"/>
+        </HBox>
+    </children>
 </VBox>

@@ -2,14 +2,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
-    <HBox spacing="5">
-        <Label text="Training Session:" />
-        <ComboBox fx:id="trainingSessionSelector" />
-    </HBox>
-    <TextField fx:id="quizInputField" promptText="Short quiz input" />
-    <HBox spacing="10">
-        <Button fx:id="submitQuizButton" text="Submit Quiz" />
-        <Button fx:id="markCompleteButton" text="Mark Training Complete" />
-    </HBox>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user4.TrainingModulePageController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="trainingSessionSelection" promptText="Select Training Session"/>
+        <TextField fx:id="quizInputField" promptText="Enter Quiz Answer"/>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="submitQuizButton" text="Submit Quiz" onAction="#submitQuiz"/>
+            <Button fx:id="markTrainingCompleteButton" text="Mark Training Complete" onAction="#markTrainingComplete"/>
+        </HBox>
+    </children>
 </VBox>

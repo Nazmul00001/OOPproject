@@ -7,13 +7,15 @@ import javafx.scene.control.TableView;
 
 public class FinancialOverviewPageController {
     @javafx.fxml.FXML
-    private Button downloadButton;
-    @javafx.fxml.FXML
     private ComboBox financialCategory;
     @javafx.fxml.FXML
-    private TableView financialTable;
+    private TableView financialDataTable;
 
     @javafx.fxml.FXML
     public void downloadReport(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void viewDetails(ActionEvent actionEvent) {
     }
 }

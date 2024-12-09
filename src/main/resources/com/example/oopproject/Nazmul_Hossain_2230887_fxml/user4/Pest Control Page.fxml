@@ -2,17 +2,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
-    <HBox spacing="5">
-        <Label text="Pesticide Application:" />
-        <ComboBox fx:id="pesticideSelector" />
-    </HBox>
-    <TableView fx:id="treatedAreasTable">
-        <columns>
-            <TableColumn text="Area" />
-            <TableColumn text="Application Date" />
-        </columns>
-    </TableView>
-    <TextArea fx:id="unresolvedIssuesField" promptText="Input unresolved pest issues" />
-    <Button fx:id="requestResourcesButton" text="Request Additional Resources" />
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user4.PestControlPageController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="pesticideSelection" promptText="Select Pesticide Application"/>
+        <TableView fx:id="treatedAreasTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Area"/>
+                <TableColumn text="Status"/>
+            </columns>
+        </TableView>
+        <TextArea fx:id="unresolvedIssues" promptText="Log Unresolved Pest Issues"/>
+        <Button fx:id="requestResourcesButton" text="Request Additional Resources" onAction="#requestAdditionalResources"/>
+    </children>
 </VBox>

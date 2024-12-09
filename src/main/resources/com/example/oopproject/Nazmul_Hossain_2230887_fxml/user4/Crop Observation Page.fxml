@@ -2,17 +2,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
-    <HBox spacing="5">
-        <Label text="Select Crop or Plot:" />
-        <ComboBox fx:id="cropSelector" />
-    </HBox>
-    <TextArea fx:id="cropObservationField" promptText="Input crop observations" />
-    <TableView fx:id="observationLogsTable">
-        <columns>
-            <TableColumn text="Date" />
-            <TableColumn text="Observation" />
-        </columns>
-    </TableView>
-    <Button fx:id="submitObservationButton" text="Submit" />
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user4.CropObservationPageController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="cropSelection" promptText="Select Crop or Plot"/>
+        <TextArea fx:id="cropObservations" promptText="Enter Crop Observations"/>
+        <TableView fx:id="observationLogsTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Date"/>
+                <TableColumn text="Observation"/>
+            </columns>
+        </TableView>
+        <Button fx:id="submitObservationsButton" text="Submit Observations" onAction="#submitObservations"/>
+    </children>
 </VBox>

@@ -2,24 +2,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox spacing="10" xmlns:fx="http://javafx.com/fxml">
-    <HBox spacing="5">
-        <Label text="Type of Mango/Plot/Zone:" />
-        <ComboBox fx:id="mangoTypeSelector" />
-    </HBox>
-    <HBox spacing="5">
-        <Label text="Total Quantity:" />
-        <TextField fx:id="quantityField" />
-    </HBox>
-    <HBox spacing="5">
-        <Label text="Issues (if any):" />
-        <TextField fx:id="issuesField" />
-    </HBox>
-    <TableView fx:id="harvestDataTable">
-        <columns>
-            <TableColumn text="Plot" />
-            <TableColumn text="Harvested Quantity" />
-        </columns>
-    </TableView>
-    <Button fx:id="submitHarvestButton" text="Submit Harvest Data" />
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887_controler.user4.HarvestingPageController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="cropZoneSelection" promptText="Select Type of Mango/Plot/Zone"/>
+        <TextField fx:id="harvestQuantity" promptText="Input Total Quantity"/>
+        <TextField fx:id="harvestIssues" promptText="Input Issues (e.g., overripe fruit)"/>
+        <TableView fx:id="harvestDataOverview" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Plot"/>
+                <TableColumn text="Harvested Quantity"/>
+            </columns>
+        </TableView>
+        <Button fx:id="submitHarvestDataButton" text="Submit Harvest Data" onAction="#submitHarvestData"/>
+    </children>
 </VBox>
