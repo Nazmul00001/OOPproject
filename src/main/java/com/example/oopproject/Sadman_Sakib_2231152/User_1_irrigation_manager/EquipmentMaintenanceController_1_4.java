@@ -30,4 +30,11 @@ public class EquipmentMaintenanceController_1_4
     @javafx.fxml.FXML
     public void handleMarkAsCompleted(ActionEvent actionEvent) {
     }
+
+    public void handleMarkAsCompleted(javafx.event.ActionEvent actionEvent) {
+    }
+
+    public void handleGenerateReport(javafx.event.ActionEvent actionEvent) {
+
+    }
 }

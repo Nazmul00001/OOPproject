@@ -30,4 +30,3 @@
 
     <Button fx:id="generateFinancialReportButton" layoutX="50" layoutY="350" text="Generate Financial Report"/>
 </AnchorPane>
-

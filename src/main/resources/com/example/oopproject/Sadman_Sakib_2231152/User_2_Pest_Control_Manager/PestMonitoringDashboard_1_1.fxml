@@ -3,30 +3,31 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
-<?import javafx.scene.control.MapView?>
-
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableColumn?>
+
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.PestMonitoringDashboardController_1_1">
-    <!-- Pest Infestation Map -->
-    <MapView fx:id="pestInfestationMap" layoutX="50" layoutY="50" width="500" height="300" />
 
     <!-- Pest Population Trends Chart -->
-    <LineChart fx:id="pestPopulationChart" layoutX="50" layoutY="400">
+    <LineChart fx:id="pestPopulationChart" layoutX="50.0" layoutY="400.0" prefHeight="300.0" prefWidth="500.0">
         <xAxis>
-            <NumberAxis label="Time"/>
+            <NumberAxis fx:id="xAxis" label="Time"/>
         </xAxis>
         <yAxis>
-            <NumberAxis label="Pest Population"/>
+            <NumberAxis fx:id="yAxis" label="Pest Population"/>
         </yAxis>
     </LineChart>
 
     <!-- Pest Identification and Treatment Recommendations Table -->
-    <TableView fx:id="pestTreatmentTable" layoutX="600" layoutY="50">
-        <!-- Define columns for pest data -->
+    <TableView fx:id="pestTreatmentTable" layoutX="600.0" layoutY="50.0" prefHeight="250.0" prefWidth="400.0">
+        <columns>
+            <TableColumn fx:id="pestColumn" text="Pest" prefWidth="150.0"/>
+            <TableColumn fx:id="severityColumn" text="Severity" prefWidth="100.0"/>
+            <TableColumn fx:id="recommendationColumn" text="Recommendation" prefWidth="150.0"/>
+        </columns>
     </TableView>
 
-    <!-- Buttons -->
-    <Button fx:id="manualPestControlButton" layoutX="600" layoutY="350" text="Manual Pest Control"/>
-    <Button fx:id="automatedPestControlButton" layoutX="700" layoutY="350" text="Automated Treatments"/>
-    <Button fx:id="detailedReportsButton" layoutX="800" layoutY="350" text="Detailed Reports"/>
+    <!-- Manual Pest Control Button -->
+    <Button fx:id="manualPestControlButton" layoutX="600.0" layoutY="350.0" text="Manual Pest Control"/>
+
 </AnchorPane>
