@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.FinancialOverviewPageController">
+    <top>
+        <Label text="Financial Overview" style="-fx-font-size: 20; -fx-font-weight: bold;" BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+            <!-- Dropdown for Selecting Financial Category -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Select Category:" />
+                <ComboBox fx:id="financialCategory" promptText="Choose Category" prefWidth="200" />
+            </HBox>
+
+            <!-- TableView for Displaying Financial Data -->
+            <Label text="Financial Details:" />
+            <TableView fx:id="financialDataTable" prefHeight="300">
+                <columns>
+                    <TableColumn text="Date" />
+                    <TableColumn text="Description" />
+                    <TableColumn text="Amount" />
+                    <TableColumn text="Type" />
+                </columns>
+            </TableView>
+
+            <!-- Buttons -->
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Download Report" onAction="#downloadReport" />
+                <Button text="View Details" onAction="#viewDetails" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

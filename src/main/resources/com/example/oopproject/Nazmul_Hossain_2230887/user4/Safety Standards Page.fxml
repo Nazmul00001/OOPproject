@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.SafetyStandardsPageController" spacing="10" alignment="CENTER">
+    <children>
+        <CheckBox fx:id="dailyChecklist" text="Complete Daily Safety Checklist"/>
+        <CheckBox fx:id="reportSafetyIssues" text="Report Safety Issues"/>
+        <CheckBox fx:id="viewSafetyInstructions" text="View Safety Instructions"/>
+        <TableView fx:id="complianceTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Standard"/>
+                <TableColumn text="Compliance Status"/>
+            </columns>
+        </TableView>
+        <Button fx:id="submitChecklistButton" text="Submit Checklist" onAction="#submitChecklist"/>
+    </children>
+</VBox>

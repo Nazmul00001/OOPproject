@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.PopupWindowforSpecificDetailsController">
+    <top>
+        <Label text="Detailed Financial Information" style="-fx-font-size: 18; -fx-font-weight: bold;" BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+            <TableView fx:id="detailedDataTable" prefHeight="300">
+                <columns>
+                    <TableColumn text="Transaction ID" />
+                    <TableColumn text="Date" />
+                    <TableColumn text="Description" />
+                    <TableColumn text="Amount" />
+                    <TableColumn text="Balance After" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button text="Close" onAction="#closePopup" />
+        </HBox>
+    </bottom>
+</BorderPane>
