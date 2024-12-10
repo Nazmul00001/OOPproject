@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.SoilSamplingController_2_2">
+    <TableView fx:id="samplingScheduleTable" layoutX="50" layoutY="50">
+        <!-- Define table columns for the sampling schedule -->
+    </TableView>
+
+    <TextField fx:id="sampleLocationTextField" layoutX="50" layoutY="250" promptText="Sample Location"/>
+    <TextField fx:id="notesTextField" layoutX="200" layoutY="250" promptText="Notes"/>
+
+    <Button fx:id="scheduleSamplingButton" layoutX="50" layoutY="300" text="Schedule Sampling"/>
+    <Button fx:id="viewTestResultsButton" layoutX="200" layoutY="300" text="View Test Results"/>
+</AnchorPane>
+

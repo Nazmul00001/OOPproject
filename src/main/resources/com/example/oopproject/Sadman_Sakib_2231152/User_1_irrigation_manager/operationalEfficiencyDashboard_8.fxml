@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.OperationalEfficiencyDashboardController_8">
+    <LineChart fx:id="productivityLineChart" layoutX="50" layoutY="50">
+        <xAxis>
+            <NumberAxis label="Time"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Productivity"/>
+        </yAxis>
+    </LineChart>
+
+    <Button fx:id="optimizeProcessesButton" layoutX="50" layoutY="350" text="Optimize Operational Processes"/>
+</AnchorPane>
+

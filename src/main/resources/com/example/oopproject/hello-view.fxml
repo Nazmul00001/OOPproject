@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-
-    <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="hi!" />
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="245.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mango Garden" />
+      <TextField fx:id="username" layoutX="35.0" layoutY="139.0" promptText="Username" />
+      <TextField fx:id="password" layoutX="35.0" layoutY="200.0" promptText="Password" />
+      <ComboBox fx:id="combobox" layoutX="376.0" layoutY="139.0" prefWidth="150.0" />
+      <Label fx:id="label" layoutX="80.0" layoutY="318.0" text="Label" />
+      <Button layoutX="233.0" layoutY="283.0" mnemonicParsing="false" onAction="#Login" text="Button" />
+   </children>
+</AnchorPane>
