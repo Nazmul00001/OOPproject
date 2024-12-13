@@ -35,7 +35,7 @@
     </LineChart>
 
     <TableView fx:id="cropMonitoringTable" layoutX="65.0" layoutY="345.0" prefHeight="356.0" prefWidth="178.0">
-        <!-- Define columns for crop monitoring data -->
+
     </TableView>
 
     <Button layoutX="346.0" layoutY="672.0" onAction="#viewReportsButton" text="View Detailed Reports" />

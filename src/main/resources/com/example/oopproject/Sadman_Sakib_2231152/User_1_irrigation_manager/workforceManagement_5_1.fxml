@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="511.0" prefWidth="576.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.WorkforceManagementController_5_1">
     <TableView fx:id="workforceScheduleTable" layoutX="27.0" layoutY="67.0" prefHeight="321.0" prefWidth="198.0">
-        <!-- Define columns for workforce schedule -->
+
     </TableView>
 
     <TextField fx:id="taskAssignmentsTextField" layoutX="27.0" layoutY="14.0" promptText="Task Assignments" />

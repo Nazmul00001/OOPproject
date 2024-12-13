@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.EquipmentMaintenanceController_2_3">
-    <!-- Maintenance Schedule Table -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.EquipmentMaintenanceController_2_3">
+
     <TableView fx:id="maintenanceScheduleTable" layoutX="50" layoutY="50">
-        <!-- Define columns for maintenance schedule -->
+
     </TableView>
 
-    <!-- Text Fields for Parts Used and Labor Hours -->
-    <TextField fx:id="partsUsedTextField" layoutX="600" layoutY="50" promptText="Parts Used"/>
-    <TextField fx:id="laborHoursTextField" layoutX="600" layoutY="100" promptText="Labor Hours"/>
 
-    <!-- Buttons for Mark as Completed and Generate Report -->
-    <Button fx:id="markAsCompletedButton" layoutX="600" layoutY="150" text="Mark as Completed"/>
-    <Button fx:id="generateReportButton" layoutX="700" layoutY="150" text="Generate Report"/>
+    <TextField fx:id="partsUsedTextField" layoutX="321.0" layoutY="50.0" promptText="Parts Used" />
+    <TextField fx:id="laborHoursTextField" layoutX="321.0" layoutY="100.0" promptText="Labor Hours" />
+
+    <Button layoutX="340.0" layoutY="225.0" onAction="#markAsCompletedButton" text="Mark as Completed" />
+    <Button layoutX="340.0" layoutY="292.0" onAction="#generateReportButton" prefHeight="35.0" prefWidth="160.0" text="Generate Report" />
 </AnchorPane>

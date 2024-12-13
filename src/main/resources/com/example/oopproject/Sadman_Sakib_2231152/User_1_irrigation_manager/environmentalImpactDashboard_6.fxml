@@ -7,15 +7,15 @@
 
 <AnchorPane prefHeight="402.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.EnvironmentalImpactDashboardController_6">
     <PieChart fx:id="carbonFootprintChart" layoutX="352.0" layoutY="28.0" prefHeight="290.0" prefWidth="245.0">
-        <!-- Define PieChart for carbon footprint -->
+
     </PieChart>
 
     <PieChart fx:id="waterUsageChart" layoutX="658.0" layoutY="44.0" prefHeight="258.0" prefWidth="223.0">
-        <!-- Define PieChart for water usage -->
+
     </PieChart>
 
     <TableView fx:id="environmentalImpactMetricsTable" layoutX="78.0" layoutY="32.0" prefHeight="282.0" prefWidth="223.0">
-        <!-- Define columns for environmental impact metrics -->
+
     </TableView>
 
     <Button layoutX="67.0" layoutY="345.0" onAction="#generateEnvironmentalReportButton" text="Generate Environmental Report" />

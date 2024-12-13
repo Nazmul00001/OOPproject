@@ -7,7 +7,7 @@
 
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.FertilizerManagementController_4_1">
     <TableView fx:id="fertilizerApplicationTable" layoutX="50" layoutY="50" prefHeight="307.0" prefWidth="241.0">
-        <!-- Define columns for fertilizer application schedule -->
+
     </TableView>
 
     <TextField fx:id="fertilizerTypeTextField" layoutX="44.0" layoutY="14.0" promptText="Fertilizer Type" />

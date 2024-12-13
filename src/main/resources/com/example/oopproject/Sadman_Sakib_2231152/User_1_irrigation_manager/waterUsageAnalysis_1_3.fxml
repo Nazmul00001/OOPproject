@@ -12,7 +12,7 @@
     <PieChart fx:id="waterUsageByTimePeriodChart" layoutX="338.0" layoutY="485.0" prefHeight="224.0" prefWidth="255.0" />
 
     <TableView fx:id="detailedWaterUsageTable" layoutX="50.0" layoutY="276.0">
-        <!-- Define table columns here -->
+
     </TableView>
 
     <TextField fx:id="startDateTextField" layoutX="64.0" layoutY="108.0" promptText="Start Date" />

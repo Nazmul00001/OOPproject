@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="353.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.EquipmentMaintenanceController_1_4">
     <TableView fx:id="maintenanceScheduleTable" layoutX="214.0" layoutY="14.0" prefHeight="285.0" prefWidth="148.0">
-        <!-- Define table columns here -->
+
     </TableView>
 
     <TextField fx:id="partsUsedTextField" layoutX="5.0" layoutY="21.0" promptText="Parts Used" />

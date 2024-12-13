@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.WorkforceManagementController_7">
-    <!-- Workforce Schedule Table -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.WorkforceManagementController_7">
+
     <TableView fx:id="workforceScheduleTable" layoutX="50" layoutY="50" prefWidth="700" />
 
-    <!-- TextFields for Task Assignments and Labor Hours -->
+
     <TextField fx:id="taskAssignmentsTextField" layoutX="800" layoutY="50" promptText="Task Assignments" />
     <TextField fx:id="laborHoursTextField" layoutX="800" layoutY="100" promptText="Labor Hours" />
 
-    <!-- Buttons for Assign Tasks and Generate Reports -->
-    <Button fx:id="assignTasksButton" layoutX="800" layoutY="150" text="Assign Tasks" />
-    <Button fx:id="generateWorkforceReportButton" layoutX="800" layoutY="200" text="Generate Report" />
+
+    <Button layoutX="800" layoutY="150" onAction="#assignTasksButton" text="Assign Tasks" />
+    <Button layoutX="800" layoutY="200" onAction="#generateWorkforceReportButton" text="Generate Report" />
 </AnchorPane>

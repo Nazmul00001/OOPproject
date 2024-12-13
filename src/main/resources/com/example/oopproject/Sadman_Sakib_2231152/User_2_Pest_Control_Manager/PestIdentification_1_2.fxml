@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.PestIdentificationController_1_2">
-    <!-- Image Upload -->
-    <ImageView fx:id="pestImageUpload" layoutX="50" layoutY="50" width="200" height="200"/>
 
-    <!-- Description of Symptoms -->
-    <TextField fx:id="symptomDescriptionTextField" layoutX="300" layoutY="50" promptText="Describe symptoms"/>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.PestIdentificationController_1_2">
 
-    <!-- Dropdowns for Crop Type and Suspected Pest -->
-    <ComboBox fx:id="cropTypeComboBox" layoutX="300" layoutY="100" promptText="Select Crop Type"/>
-    <ComboBox fx:id="suspectedPestComboBox" layoutX="300" layoutY="150" promptText="Select Suspected Pest"/>
+    <ImageView fx:id="pestImageUpload" layoutX="50" layoutY="50" />
 
-    <!-- Button to submit for identification -->
-    <Button fx:id="submitForIdentificationButton" layoutX="300" layoutY="200" text="Submit for Identification"/>
+
+    <TextField fx:id="symptomDescriptionTextField" layoutX="300" layoutY="50" promptText="Describe symptoms" />
+
+
+    <ComboBox fx:id="cropTypeComboBox" layoutX="300" layoutY="100" promptText="Select Crop Type" />
+    <ComboBox fx:id="suspectedPestComboBox" layoutX="300" layoutY="150" promptText="Select Suspected Pest" />
+
+
+    <Button layoutX="300" layoutY="200" onAction="#submitForIdentificationButton" text="Submit for Identification" />
 </AnchorPane>

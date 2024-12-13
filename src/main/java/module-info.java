@@ -4,6 +4,9 @@ module com.example.oopproject {
     requires java.desktop;
 
 
+
+
+
     opens com.example.oopproject to javafx.fxml;
     exports com.example.oopproject;
     opens com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager to javafx.fxml;
