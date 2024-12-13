@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.WorkforceManagementController_5_1">
-    <TableView fx:id="workforceScheduleTable" layoutX="50" layoutY="50">
+
+<AnchorPane prefHeight="511.0" prefWidth="576.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.WorkforceManagementController_5_1">
+    <TableView fx:id="workforceScheduleTable" layoutX="27.0" layoutY="67.0" prefHeight="321.0" prefWidth="198.0">
         <!-- Define columns for workforce schedule -->
     </TableView>
 
-    <TextField fx:id="taskAssignmentsTextField" layoutX="50" layoutY="250" promptText="Task Assignments"/>
-    <TextField fx:id="laborHoursTextField" layoutX="200" layoutY="250" promptText="Labor Hours"/>
+    <TextField fx:id="taskAssignmentsTextField" layoutX="27.0" layoutY="14.0" promptText="Task Assignments" />
+    <TextField fx:id="laborHoursTextField" layoutX="174.0" layoutY="14.0" promptText="Labor Hours" />
 
-    <Button fx:id="assignTasksButton" layoutX="50" layoutY="300" text="Assign Tasks"/>
-    <Button fx:id="generateReportsButton" layoutX="200" layoutY="300" text="Generate Reports"/>
+    <Button layoutX="252.0" layoutY="227.0" onAction="#assignTasksButton" prefHeight="35.0" prefWidth="146.0" text="Assign Tasks" />
+    <Button layoutX="252.0" layoutY="155.0" onAction="#generateReportsButton" text="Generate Reports" />
 </AnchorPane>

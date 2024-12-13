@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
-
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.FertilizerManagementController_4_1">
-    <TableView fx:id="fertilizerApplicationTable" layoutX="50" layoutY="50">
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.FertilizerManagementController_4_1">
+    <TableView fx:id="fertilizerApplicationTable" layoutX="50" layoutY="50" prefHeight="307.0" prefWidth="241.0">
         <!-- Define columns for fertilizer application schedule -->
     </TableView>
 
-    <TextField fx:id="fertilizerTypeTextField" layoutX="50" layoutY="250" promptText="Fertilizer Type"/>
-    <TextField fx:id="amountTextField" layoutX="200" layoutY="250" promptText="Amount"/>
-    <TextField fx:id="applicationRateTextField" layoutX="350" layoutY="250" promptText="Application Rate"/>
+    <TextField fx:id="fertilizerTypeTextField" layoutX="44.0" layoutY="14.0" promptText="Fertilizer Type" />
+    <TextField fx:id="amountTextField" layoutX="199.0" layoutY="14.0" promptText="Amount" />
+    <TextField fx:id="applicationRateTextField" layoutX="313.0" layoutY="14.0" promptText="Application Rate" />
 
-    <Button fx:id="createPlanButton" layoutX="50" layoutY="300" text="Create New Plan"/>
-    <Button fx:id="viewHistoricalDataButton" layoutX="200" layoutY="300" text="View Historical Data"/>
+    <Button layoutX="318.0" layoutY="225.0" onAction="#createPlanButton" prefHeight="35.0" prefWidth="164.0" text="Create New Plan" />
+    <Button layoutX="315.0" layoutY="141.0" onAction="#viewHistoricalDataButton" text="View Historical Data" />
 </AnchorPane>
-
