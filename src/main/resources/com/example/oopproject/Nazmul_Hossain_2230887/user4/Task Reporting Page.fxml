@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.TaskReportingPageController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="taskCategory" promptText="Select Task Category"/>
+        <TextArea fx:id="taskDetails" promptText="Details about tasks completed"/>
+        <TableView fx:id="summaryTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Task"/>
+                <TableColumn text="Status"/>
+            </columns>
+        </TableView>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="submitReportButton" text="Submit Report" onAction="#submitReport"/>
+            <Button fx:id="viewSummaryButton" text="View Summary" onAction="#viewSummary"/>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.PestControlPageController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="pesticideSelection" promptText="Select Pesticide Application"/>
+        <TableView fx:id="treatedAreasTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Area"/>
+                <TableColumn text="Status"/>
+            </columns>
+        </TableView>
+        <TextArea fx:id="unresolvedIssues" promptText="Log Unresolved Pest Issues"/>
+        <Button fx:id="requestResourcesButton" text="Request Additional Resources" onAction="#requestAdditionalResources"/>
+    </children>
+</VBox>

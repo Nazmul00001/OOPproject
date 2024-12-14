@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.ComplianceDashboardController" spacing="10" alignment="CENTER">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu text="Compliance Options"/>
+            </menus>
+        </MenuBar>
+        <TableView fx:id="complianceDataTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Compliance Aspect"/>
+                <TableColumn text="Status"/>
+            </columns>
+        </TableView>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="runChecksButton" text="Run Compliance Checks" onAction="#runComplianceChecks"/>
+            <Button fx:id="generateReportButton" text="Generate Report" onAction="#generateComplianceReport"/>
+            <Button fx:id="downloadReportButton" text="Download Report" onAction="#downloadComplianceReport"/>
+        </HBox>
+    </children>
+</VBox>

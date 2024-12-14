@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.EmergencyManagementPageController" spacing="10" alignment="CENTER">
+    <children>
+        <TextField fx:id="emergencyDetails" promptText="Log Emergency Details"/>
+        <TextField fx:id="actionPlan" promptText="Enter Action Plan"/>
+        <TableView fx:id="resolutionProgressTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Task"/>
+                <TableColumn text="Status"/>
+            </columns>
+        </TableView>
+        <Button fx:id="submitActionPlanButton" text="Submit Action Plan" onAction="#submitActionPlan"/>
+        <Label fx:id="notificationLabel" text=""/>
+    </children>
+</VBox>

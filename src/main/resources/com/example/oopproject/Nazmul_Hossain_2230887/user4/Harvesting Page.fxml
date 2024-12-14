@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.HarvestingPageController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="cropZoneSelection" promptText="Select Type of Mango/Plot/Zone"/>
+        <TextField fx:id="harvestQuantity" promptText="Input Total Quantity"/>
+        <TextField fx:id="harvestIssues" promptText="Input Issues (e.g., overripe fruit)"/>
+        <TableView fx:id="harvestDataOverview" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Plot"/>
+                <TableColumn text="Harvested Quantity"/>
+            </columns>
+        </TableView>
+        <Button fx:id="submitHarvestDataButton" text="Submit Harvest Data" onAction="#submitHarvestData"/>
+    </children>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.ManageWorkforceEffectivelyController" spacing="10" alignment="CENTER">
+    <children>
+        <ComboBox fx:id="fieldWorkerSelection" promptText="Select Field Worker"/>
+        <TableView fx:id="taskAssignmentsTable" prefHeight="300" prefWidth="400">
+            <columns>
+                <TableColumn text="Task"/>
+                <TableColumn text="Status"/>
+                <TableColumn text="Deadline"/>
+            </columns>
+        </TableView>
+        <TextArea fx:id="taskNotes" promptText="Add Notes or Instructions"/>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="assignTaskButton" text="Assign Task" onAction="#assignTask"/>
+            <Button fx:id="submitButton" text="Submit" onAction="#submitWorkforceChanges"/>
+        </HBox>
+    </children>
+</VBox>
