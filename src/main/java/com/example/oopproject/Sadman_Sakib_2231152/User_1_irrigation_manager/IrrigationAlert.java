@@ -2,7 +2,6 @@ package com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import java.time.LocalDate;
 
 public class IrrigationAlert {
 
@@ -12,7 +11,7 @@ public class IrrigationAlert {
     private final StringProperty windSpeed;
     private final StringProperty date;
 
-    public IrrigationAlert(String soilMoisture, String temperature, String humidity, String windSpeed, LocalDate date) {
+    public IrrigationAlert(String soilMoisture, String temperature, String humidity, String windSpeed, String date) {
         this.soilMoisture = new SimpleStringProperty(soilMoisture);
         this.temperature = new SimpleStringProperty(temperature);
         this.humidity = new SimpleStringProperty(humidity);

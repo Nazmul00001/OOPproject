@@ -21,8 +21,8 @@ public class DashbordForUserController {
 
     @FXML
     public void initialize() {
-        // Add each goal separately to the ComboBox
-        comboboxforgoal.getItems().addAll("1.Dashboard Controller", "2.soil Health Dashboard", "3.crop Growth Dashboard_", "4.fertilizer Management", "5.workforce Management", "6.environmental Impact Dashboard", "7.financial Dashboard", "8.operational Efficiency Dashboard");
+
+        comboboxforgoal.getItems().addAll("1.Dashboard Controller", "2.soil Health Dashboard", "3.crop Growth Dashboard", "4.fertilizer Management", "5.workforce Management", "6.environmental Impact Dashboard", "7.financial Dashboard", "8.operational Efficiency Dashboard");
     }
 
     @FXML
@@ -32,18 +32,18 @@ public class DashbordForUserController {
 
         if (selectedGoal != null) {
 
-            // Map each goal to its corresponding FXML file
-            Map<String, String> sceneMap = new HashMap<>();
-            sceneMap.put("Goal 1", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/DashboardController_1_1.fxml");
-            sceneMap.put("Goal 2", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/soilHealthDashboard_2_1.fxml");
-            sceneMap.put("Goal 3", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/cropGrowthDashboard_3_1.fxml");
-            sceneMap.put("Goal 4", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/fertilizerManagement_4_1.fxml");
-            sceneMap.put("Goal 5", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/workforceManagement_5_1.fxml");
-            sceneMap.put("Goal 6", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/environmentalImpactDashboard_6.fxml");
-            sceneMap.put("Goal 7", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/financialDashboard_7.fxml");
-            sceneMap.put("Goal 8", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/operationalEfficiencyDashboard_8.fxml");
 
-            // Get the scene path for the selected goal
+            Map<String, String> sceneMap = new HashMap<>();
+            sceneMap.put("1.Dashboard Controller", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/DashboardController_1_1.fxml");
+            sceneMap.put("2.soil Health Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/soilHealthDashboard_2_1.fxml");
+            sceneMap.put("3.crop Growth Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/cropGrowthDashboard_3_1.fxml");
+            sceneMap.put("4.fertilizer Management", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/fertilizerManagement_4_1.fxml");
+            sceneMap.put("5.workforce Management", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/workforceManagement_5_1.fxml");
+            sceneMap.put("6.environmental Impact Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/environmentalImpactDashboard_6.fxml");
+            sceneMap.put("7.financial Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/financialDashboard_7.fxml");
+            sceneMap.put("8.operational Efficiency Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/operationalEfficiencyDashboard_8.fxml");
+
+
             String scenePath = sceneMap.get(selectedGoal);
 
             if (scenePath != null) {
@@ -51,7 +51,7 @@ public class DashbordForUserController {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource(scenePath));
                     Scene newScene = new Scene(loader.load());
 
-                    // Switch to the new scene
+
                     Stage stage = (Stage) viewButton.getScene().getWindow();
                     stage.setScene(newScene);
                 } catch (IOException e) {

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="546.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.DashboardController_1_1">
+<AnchorPane prefHeight="546.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.DashboardController_1_1">
     <TextField fx:id="soilMoisture" layoutX="28.0" layoutY="33.0" promptText="Soil Moisture" />
     <TextField fx:id="temperature" layoutX="165.0" layoutY="33.0" promptText="Temperature" />
     <TextField fx:id="humidity" layoutX="28.0" layoutY="83.0" promptText="Humidity" />
@@ -23,4 +27,5 @@
       </columns></TableView>
    <Button layoutX="28.0" layoutY="134.0" mnemonicParsing="false" onAction="#savadata" text="Save Data" />
    <DatePicker fx:id="datePicker" layoutX="366.0" layoutY="33.0" />
+   <Button layoutX="508.0" layoutY="101.0" mnemonicParsing="false" onAction="#backtomainpage" text="Back to main page" />
 </AnchorPane>
