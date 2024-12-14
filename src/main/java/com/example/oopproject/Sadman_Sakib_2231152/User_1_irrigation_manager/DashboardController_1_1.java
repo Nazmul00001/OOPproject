@@ -1,5 +1,8 @@
+
 package com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager;
 
+
+import com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.IrrigationAlert;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -48,38 +51,38 @@ public class DashboardController_1_1 {
 
     @FXML
     public void initialize() {
-        // Initialize table columns with property mappings
+
         soilmoisture2.setCellValueFactory(new PropertyValueFactory<>("soilMoisture"));
         temperature2.setCellValueFactory(new PropertyValueFactory<>("temperature"));
         humidity2.setCellValueFactory(new PropertyValueFactory<>("humidity"));
         windSpeed2.setCellValueFactory(new PropertyValueFactory<>("windSpeed"));
         date.setCellValueFactory(new PropertyValueFactory<>("date"));
 
-        // Set the table's items
+
         alertsTable.setItems(alertDataList);
     }
 
     @FXML
     public void savadata(ActionEvent actionEvent) {
-        // Validate inputs
+
         if (soilMoisture.getText().isEmpty() || temperature.getText().isEmpty() ||
                 humidity.getText().isEmpty() || windSpeed.getText().isEmpty() || datePicker.getValue() == null) {
             showAlert(Alert.AlertType.WARNING, "Input Error", "All fields must be filled.");
             return;
         }
 
-        // Add data to the table
+
         IrrigationAlert newData = new IrrigationAlert(
                 soilMoisture.getText(),
                 temperature.getText(),
                 humidity.getText(),
                 windSpeed.getText(),
-                datePicker.getValue().toString() // Convert LocalDate to String
+                datePicker.getValue().toString()
         );
 
         alertDataList.add(newData);
 
-        // Clear input fields
+
         soilMoisture.clear();
         temperature.clear();
         humidity.clear();
@@ -112,7 +115,7 @@ public class DashboardController_1_1 {
 
     private void switchScene(ActionEvent actionEvent, String fxmlFile) {
         try {
-            // Load the FXML file for the new scene
+            // Load the FXML file using the absolute path
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
             Parent root = loader.load();
 
@@ -130,6 +133,6 @@ public class DashboardController_1_1 {
 
     @FXML
     public void backtomainpage(ActionEvent actionEvent) {
-        switchScene(actionEvent, "/com/example/oopproject/Sadman_Sakib_2231152/Dashbord_for_User_1.fxml");
+        switchScene(actionEvent, "/com/example/oopproject/Sadman_Sakib_2231152/DashbordForUser.fxml");
     }
 }

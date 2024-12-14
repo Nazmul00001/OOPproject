@@ -22,14 +22,14 @@ public class DashbordForUser2Controller {
     @FXML
     public void initialize() {
         comboboxforgoal.getItems().addAll(
-                "1.Dashboard Controller",
-                "2.soil Health Dashboard",
-                "3.crop Growth Dashboard",
-                "4.fertilizer Management",
-                "5.workforce Management",
-                "6.environmental Impact Dashboard",
-                "7.financial Dashboard",
-                "8.operational Efficiency Dashboard"
+                "1.Pest Monitoring Dashboard",
+                "2.Pest Control Planning",
+                "3.Pest Control Data Analysis",
+                "4.Pesticide Usage Tracking",
+                "5.IPM Planning",
+                "6.Environmental Impact Dashboard",
+                "7.Workforce Management",
+                "8.Financial Dashboard"
         );
     }
 
@@ -39,14 +39,14 @@ public class DashbordForUser2Controller {
 
         if (selectedGoal != null) {
             Map<String, String> sceneMap = new HashMap<>();
-            sceneMap.put("1.Dashboard Controller", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/DashboardController_1_1.fxml");
-            sceneMap.put("2.soil Health Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/soilHealthDashboard_2_1.fxml");
-            sceneMap.put("3.crop Growth Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/cropGrowthDashboard_3_1.fxml");
-            sceneMap.put("4.fertilizer Management", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/fertilizerManagement_4_1.fxml");
-            sceneMap.put("5.workforce Management", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/workforceManagement_5_1.fxml");
-            sceneMap.put("6.environmental Impact Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/environmentalImpactDashboard_6.fxml");
-            sceneMap.put("7.financial Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/financialDashboard_7.fxml");
-            sceneMap.put("8.operational Efficiency Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_1_irrigation_manager/operationalEfficiencyDashboard_8.fxml");
+            sceneMap.put("1.Pest Monitoring Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/PestMonitoringDashboard_1_1.fxml");
+            sceneMap.put("2.Pest Control Planning", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/PestControlPlanning_2_1.fxml");
+            sceneMap.put("3.Pest Control Data Analysis", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/PestControlDataAnalysis_3.fxml");
+            sceneMap.put("4.Pesticide Usage Tracking", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/PesticideUsageTracking_4.fxml");
+            sceneMap.put("5.IPM Planning", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/IPMPlanning_5.fxml");
+            sceneMap.put("6.Environmental Impact Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/EnvironmentalImpactDashboard_6.fxml");
+            sceneMap.put("7.Workforce Management", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/WorkforceManagement_7_1.fxml");
+            sceneMap.put("8.Financial Dashboard", "/com/example/oopproject/Sadman_Sakib_2231152/User_2_Pest_Control_Manager/FinancialDashboard_8.fxml");
 
             String scenePath = sceneMap.get(selectedGoal);
 
