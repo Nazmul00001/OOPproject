@@ -30,20 +30,20 @@ public class CropGrowthMonitoringController_3_1
     @javafx.fxml.FXML
     public void viewReportsButton(ActionEvent actionEvent) {
         try {
-            // Load the FXML file for the new scene
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource("cropHealthAssessment_3_2.fxml"));
             Parent root = loader.load();
 
-            // Get the current stage from the event source
+
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
-            // Set the new scene
+
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
-            // Handle the error (e.g., show an error dialog)
+
         }
     }
 }
