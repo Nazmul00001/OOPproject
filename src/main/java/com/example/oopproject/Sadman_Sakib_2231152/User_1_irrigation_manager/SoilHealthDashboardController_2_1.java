@@ -1,10 +1,18 @@
 package com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class SoilHealthDashboardController_2_1
 {
@@ -41,7 +49,18 @@ public class SoilHealthDashboardController_2_1
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
-    public void viewReportsButton(ActionEvent actionEvent) {
+
+    @FXML
+    public void viewReportsButton() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SoilSampling_2_2.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
 }

@@ -2,6 +2,7 @@
 package com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager;
 
 
+import com.example.oopproject.HelloApplication;
 import com.example.oopproject.Sadman_Sakib_2231152.User_1_irrigation_manager.IrrigationAlert;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -115,17 +116,17 @@ public class DashboardController_1_1 {
 
     private void switchScene(ActionEvent actionEvent, String fxmlFile) {
         try {
-            // Load the FXML file using the absolute path
+
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
             Parent root = loader.load();
 
-            // Set the new scene to the current stage
+
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
-            // Display error alert and log the exception
+
             showAlert(Alert.AlertType.ERROR, "Scene Switch Error", "Failed to load the scene.");
             e.printStackTrace();
         }
@@ -133,6 +134,6 @@ public class DashboardController_1_1 {
 
     @FXML
     public void backtomainpage(ActionEvent actionEvent) {
-        switchScene(actionEvent, "/com/example/oopproject/Sadman_Sakib_2231152/DashbordForUser.fxml");
+        switchScene(actionEvent, "Sadman_Sakib_2231152/Dashbord for User_1.fxml");
     }
 }
