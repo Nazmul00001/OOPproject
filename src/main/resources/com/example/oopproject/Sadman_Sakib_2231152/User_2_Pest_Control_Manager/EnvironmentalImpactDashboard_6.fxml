@@ -30,5 +30,5 @@
     <TableView fx:id="impactMetricsTable" layoutX="574.0" layoutY="71.0" prefWidth="400" />
 
     <!-- Button to Generate Environmental Report -->
-    <Button layoutX="678.0" layoutY="471.0" onAction="#generateEnvironmentalReportButton" text="Generate Report" />
+    <Button layoutX="673.0" layoutY="501.0" onAction="#generateEnvironmentalReportButton" text="Generate Report" />
 </AnchorPane>

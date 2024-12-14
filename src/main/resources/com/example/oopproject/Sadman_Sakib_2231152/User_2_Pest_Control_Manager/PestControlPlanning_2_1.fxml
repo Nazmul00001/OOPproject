@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.CalendarView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.PestControlPlanningController_2_1">
-    <!-- Calendar for Pest Control Schedule -->
-    <CalendarView fx:id="controlPlanningCalendar" layoutX="50" layoutY="50" width="400" height="300"/>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager.PestControlPlanningController_2_1">
 
-    <!-- Dropdowns for Pest Type, Control Method, and Product Type -->
-    <ComboBox fx:id="pestTypeComboBox" layoutX="500" layoutY="50" promptText="Select Pest Type"/>
-    <ComboBox fx:id="controlMethodComboBox" layoutX="500" layoutY="100" promptText="Select Control Method"/>
-    <ComboBox fx:id="productTypeComboBox" layoutX="500" layoutY="150" promptText="Select Product Type"/>
 
-    <!-- Text Field for Treatment Details -->
-    <TextField fx:id="treatmentDetailsTextField" layoutX="500" layoutY="200" promptText="Enter Treatment Details"/>
+    <DatePicker fx:id="controlPlanningDatePicker" layoutX="50" layoutY="50" promptText="Select Date" />
 
-    <!-- Buttons to Save, Edit, or Delete Pest Control Plan -->
-    <Button fx:id="savePlanButton" layoutX="500" layoutY="250" text="Save Plan"/>
-    <Button fx:id="editPlanButton" layoutX="600" layoutY="250" text="Edit Plan"/>
-    <Button fx:id="deletePlanButton" layoutX="700" layoutY="250" text="Delete Plan"/>
+
+    <ComboBox fx:id="pestTypeComboBox" layoutX="500" layoutY="50" promptText="Select Pest Type" />
+    <ComboBox fx:id="controlMethodComboBox" layoutX="500" layoutY="100" promptText="Select Control Method" />
+    <ComboBox fx:id="productTypeComboBox" layoutX="500" layoutY="150" promptText="Select Product Type" />
+
+    <TextField fx:id="treatmentDetailsTextField" layoutX="500" layoutY="200" promptText="Enter Treatment Details" />
+
+    <Button layoutX="500" layoutY="250" onAction="#savePlanButton" text="Save Plan" />
+    <Button layoutX="600" layoutY="250" onAction="#editPlanButton" text="Edit Plan" />
+    <Button layoutX="700" layoutY="250" onAction="#deletePlanButton" text="Delete Plan" />
 </AnchorPane>

@@ -14,10 +14,6 @@ public class EquipmentMaintenanceController_1_4
     private TextField laborHoursTextField;
     @javafx.fxml.FXML
     private TableView maintenanceScheduleTable;
-    @javafx.fxml.FXML
-    private Button generateReportButton;
-    @javafx.fxml.FXML
-    private Button markAsCompletedButton;
 
     @javafx.fxml.FXML
     public void initialize() {

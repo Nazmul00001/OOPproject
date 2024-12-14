@@ -1,5 +1,6 @@
 package com.example.oopproject.Sadman_Sakib_2231152.User_2_Pest_Control_Manager;
 
+import javafx.event.ActionEvent;
 import javafx.scene.chart.LineChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -9,8 +10,6 @@ public class PestControlDataAnalysisController_3
 {
     @javafx.fxml.FXML
     private LineChart controlEfficacyChart;
-    @javafx.fxml.FXML
-    private Button exportDataButton;
     @javafx.fxml.FXML
     private ComboBox pestTypeFilterComboBox;
     @javafx.fxml.FXML
@@ -24,4 +23,9 @@ public class PestControlDataAnalysisController_3
 
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+
+    @javafx.fxml.FXML
+    public void exportDataButton(ActionEvent actionEvent) {
+    }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oopproject.LoginMangoGarden">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="245.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mango Garden" />
+            <TextField fx:id="password" layoutX="70.0" layoutY="139.0" promptText="Password" />
+            <ComboBox fx:id="combobox" layoutX="376.0" layoutY="139.0" prefWidth="150.0" />
+            <Label fx:id="label" layoutX="80.0" layoutY="318.0" text="Label" />
+            <Button layoutX="206.0" layoutY="226.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
