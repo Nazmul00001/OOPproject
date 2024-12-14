@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.PestControlPageController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.PestControlPageController">
     <children>
-        <ComboBox fx:id="pesticideSelection" promptText="Select Pesticide Application"/>
+        <ComboBox fx:id="pesticideSelection" promptText="Select Pesticide Application" />
         <TableView fx:id="treatedAreasTable" prefHeight="300" prefWidth="400">
             <columns>
-                <TableColumn text="Area"/>
-                <TableColumn text="Status"/>
+                <TableColumn fx:id="Area" prefWidth="243.99999696016312" text="Area" />
+                <TableColumn fx:id="Status" prefWidth="221.6000518798828" text="Status" />
             </columns>
         </TableView>
-        <TextArea fx:id="unresolvedIssues" promptText="Log Unresolved Pest Issues"/>
-        <Button fx:id="requestResourcesButton" text="Request Additional Resources" onAction="#requestAdditionalResources"/>
+        <TextArea fx:id="unresolvedIssues" promptText="Log Unresolved Pest Issues" />
+        <Button onAction="#requestAdditionalResources" text="Request Additional Resources" />
     </children>
 </VBox>

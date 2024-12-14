@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.EquipmentMaintenancePageController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.EquipmentMaintenancePageController">
     <children>
-        <TextField fx:id="equipmentUsageLog" promptText="Log Equipment Usage"/>
-        <ComboBox fx:id="maintenanceTypeSelection" promptText="Select Maintenance Type"/>
+        <TextField fx:id="equipmentUsageLog" promptText="Log Equipment Usage" />
+        <ComboBox fx:id="maintenanceTypeSelection" promptText="Select Maintenance Type" />
         <TableView fx:id="repairHistoryTable" prefHeight="300" prefWidth="400">
             <columns>
-                <TableColumn text="Equipment"/>
-                <TableColumn text="Last Maintenance"/>
-                <TableColumn text="Status"/>
+                <TableColumn fx:id="Equipment" prefWidth="131.199951171875" text="Equipment" />
+                <TableColumn fx:id="LastMaintenance" prefWidth="124.800048828125" text="Last Maintenance" />
+                <TableColumn fx:id="Status" prefWidth="141.60003662109375" text="Status" />
             </columns>
         </TableView>
-        <Button fx:id="submitMaintenanceButton" text="Submit Maintenance Record" onAction="#submitMaintenanceRecord"/>
+        <Button onAction="#submitMaintenanceRecord" text="Submit Maintenance Record" />
     </children>
 </VBox>

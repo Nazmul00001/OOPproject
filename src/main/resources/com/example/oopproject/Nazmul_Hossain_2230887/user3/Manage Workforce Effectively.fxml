@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.ManageWorkforceEffectivelyController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.ManageWorkforceEffectivelyController">
     <children>
-        <ComboBox fx:id="fieldWorkerSelection" promptText="Select Field Worker"/>
+        <ComboBox fx:id="fieldWorkerSelection" promptText="Select Field Worker" />
         <TableView fx:id="taskAssignmentsTable" prefHeight="300" prefWidth="400">
             <columns>
-                <TableColumn text="Task"/>
-                <TableColumn text="Status"/>
-                <TableColumn text="Deadline"/>
+                <TableColumn fx:id="Task" prefWidth="151.20000916719437" text="Task" />
+                <TableColumn fx:id="Status" prefWidth="168.00001525878906" text="Status" />
+                <TableColumn fx:id="Deadline" prefWidth="159.2000732421875" text="Deadline" />
             </columns>
         </TableView>
-        <TextArea fx:id="taskNotes" promptText="Add Notes or Instructions"/>
-        <HBox spacing="10" alignment="CENTER">
-            <Button fx:id="assignTaskButton" text="Assign Task" onAction="#assignTask"/>
-            <Button fx:id="submitButton" text="Submit" onAction="#submitWorkforceChanges"/>
+        <TextArea fx:id="taskNotes" promptText="Add Notes or Instructions" />
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#assignTask" text="Assign Task" />
+            <Button onAction="#submitWorkforceChanges" text="Submit" />
         </HBox>
     </children>
 </VBox>

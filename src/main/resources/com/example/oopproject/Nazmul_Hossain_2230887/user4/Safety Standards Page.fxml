@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.SafetyStandardsPageController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="429.0" prefWidth="400.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.SafetyStandardsPageController">
     <children>
-        <CheckBox fx:id="dailyChecklist" text="Complete Daily Safety Checklist"/>
-        <CheckBox fx:id="reportSafetyIssues" text="Report Safety Issues"/>
-        <CheckBox fx:id="viewSafetyInstructions" text="View Safety Instructions"/>
+        <CheckBox fx:id="dailyChecklist" text="Complete Daily Safety Checklist" />
+        <CheckBox fx:id="reportSafetyIssues" prefHeight="18.0" prefWidth="187.0" text="Report Safety Issues" />
+        <CheckBox fx:id="viewSafetyInstructions" prefHeight="18.0" prefWidth="186.0" text="View Safety Instructions" />
         <TableView fx:id="complianceTable" prefHeight="300" prefWidth="400">
             <columns>
-                <TableColumn text="Standard"/>
-                <TableColumn text="Compliance Status"/>
+                <TableColumn fx:id="Standard" prefWidth="196.0" text="Standard" />
+                <TableColumn fx:id="ComplianceStatus" prefWidth="201.60003662109375" text="Compliance Status" />
             </columns>
         </TableView>
-        <Button fx:id="submitChecklistButton" text="Submit Checklist" onAction="#submitChecklist"/>
+        <Button onAction="#submitChecklist" text="Submit Checklist" />
     </children>
 </VBox>

@@ -9,10 +9,6 @@ public class TrainingModulePageController {
     @javafx.fxml.FXML
     private TextField quizInputField;
     @javafx.fxml.FXML
-    private Button markTrainingCompleteButton;
-    @javafx.fxml.FXML
-    private Button submitQuizButton;
-    @javafx.fxml.FXML
     private ComboBox trainingSessionSelection;
 
     @javafx.fxml.FXML

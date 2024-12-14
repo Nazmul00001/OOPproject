@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.ComplianceDashboardController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user3.ComplianceDashboardController">
     <children>
         <MenuBar>
             <menus>
-                <Menu text="Compliance Options"/>
+                <Menu text="Compliance Options" />
             </menus>
         </MenuBar>
         <TableView fx:id="complianceDataTable" prefHeight="300" prefWidth="400">
             <columns>
-                <TableColumn text="Compliance Aspect"/>
-                <TableColumn text="Status"/>
+                <TableColumn fx:id="ComplianceAspect" prefWidth="183.20001220703125" text="Compliance Aspect" />
+                <TableColumn fx:id="Status" prefWidth="212.79998779296875" text="Status" />
             </columns>
         </TableView>
-        <HBox spacing="10" alignment="CENTER">
-            <Button fx:id="runChecksButton" text="Run Compliance Checks" onAction="#runComplianceChecks"/>
-            <Button fx:id="generateReportButton" text="Generate Report" onAction="#generateComplianceReport"/>
-            <Button fx:id="downloadReportButton" text="Download Report" onAction="#downloadComplianceReport"/>
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#runComplianceChecks" text="Run Compliance Checks" />
+            <Button onAction="#generateComplianceReport" text="Generate Report" />
+            <Button onAction="#downloadComplianceReport" text="Download Report" />
         </HBox>
     </children>
 </VBox>

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.TrainingModulePageController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="151.0" prefWidth="346.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.TrainingModulePageController">
     <children>
-        <ComboBox fx:id="trainingSessionSelection" promptText="Select Training Session"/>
-        <TextField fx:id="quizInputField" promptText="Enter Quiz Answer"/>
-        <HBox spacing="10" alignment="CENTER">
-            <Button fx:id="submitQuizButton" text="Submit Quiz" onAction="#submitQuiz"/>
-            <Button fx:id="markTrainingCompleteButton" text="Mark Training Complete" onAction="#markTrainingComplete"/>
+        <ComboBox fx:id="trainingSessionSelection" promptText="Select Training Session" />
+        <TextField fx:id="quizInputField" promptText="Enter Quiz Answer" />
+        <HBox alignment="CENTER" spacing="10">
+            <Button onAction="#submitQuiz" text="Submit Quiz" />
+            <Button onAction="#markTrainingComplete" text="Mark Training Complete" />
         </HBox>
     </children>
 </VBox>

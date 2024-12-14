@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.CropObservationPageController" spacing="10" alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="com.example.oopproject.Nazmul_Hossain_2230887.user4.CropObservationPageController">
     <children>
-        <ComboBox fx:id="cropSelection" promptText="Select Crop or Plot"/>
-        <TextArea fx:id="cropObservations" promptText="Enter Crop Observations"/>
+        <ComboBox fx:id="cropSelection" promptText="Select Crop or Plot" />
+        <TextArea fx:id="cropObservations" promptText="Enter Crop Observations" />
         <TableView fx:id="observationLogsTable" prefHeight="300" prefWidth="400">
             <columns>
-                <TableColumn text="Date"/>
-                <TableColumn text="Observation"/>
+                <TableColumn fx:id="Date" prefWidth="236.79998475313187" text="Date" />
+                <TableColumn fx:id="Observation" prefWidth="238.40003967285156" text="Observation" />
             </columns>
         </TableView>
-        <Button fx:id="submitObservationsButton" text="Submit Observations" onAction="#submitObservations"/>
+        <Button onAction="#submitObservations" text="Submit Observations" />
     </children>
 </VBox>
